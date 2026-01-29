@@ -26,7 +26,7 @@ int main (int argc, char *argv[]){
 
 int define_bit_width(long number) {                  // Function to determine bit width
     if (number <= 255)                                
-        return 8;                                    // 8 bits for numbers up to 255 (char)
+        return 8;                                    // 8 bits for numbers up to 255 (char) USED ABOVE IN EXAMPLE, EG. 8 BIT = 1,2,4,8,16,32,64,128
     else if (number <= 65535) 
         return 16;                                   // 16 bits for numbers up to 65535 (short)
     else if (number <= 4294967295L) 
@@ -34,3 +34,5 @@ int define_bit_width(long number) {                  // Function to determine bi
     else 
         return 64;                                   // 64 bits for larger numbers (long)
 }
+
+
